@@ -57,6 +57,6 @@ sub dump1 { dump_oneline(@_) }
 
 =head1 SEE ALSO
 
-L<Data::Dump::Filtered>
+L<Data::Dump>
 
 =cut
