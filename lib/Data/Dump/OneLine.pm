@@ -29,8 +29,8 @@ code, etc.
 
 =head2 dump_oneline(...)
 
-Dump one or more data structures on a single line. Uses L<Data::Dump::Filtered>
-as the backend.
+Dump one or more data structures on a single line. Uses L<Data::Dump> as the
+backend.
 
 =cut
 
