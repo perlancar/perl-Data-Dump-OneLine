@@ -8,14 +8,14 @@ use Data::Dump;
 
 require Exporter;
 our @ISA = qw(Exporter);
-our @EXPORT_OK = qw(dump_oneline dump1);
+our @EXPORT_OK = qw(dump_oneline dump_one_line dump1);
 
 =head1 SYNOPSIS
 
- use Data::Dump::OneLine qw(dump_oneline dump1);
+ use Data::Dump::OneLine qw(dump_one_line dump1);
 
  # just use like Data::Dump's dump()
- dump_oneline(...);
+ dump_one_line(...);
 
 =head1 DESCRIPTION
 
@@ -27,14 +27,14 @@ code, etc.
 
 =head1 FUNCTIONS
 
-=head2 dump_oneline(...)
+=head2 dump_one_line(...)
 
 Dump one or more data structures on a single line. Uses L<Data::Dump> as the
 backend.
 
 =cut
 
-sub dump_oneline {
+sub dump_one_line {
     local $_ = Data::Dump::dump(@_);
 
     s/^\s*#.*//mg; # comments
@@ -49,11 +49,18 @@ sub dump_oneline {
 
 =head2 dump1
 
-An alias for dump_oneline().
+An alias for dump_one_line().
 
 =cut
 
-sub dump1 { dump_oneline(@_) }
+sub dump1 { dump_one_line(@_) }
+
+=for Pod::Coverage (dump_oneline)
+
+=cut
+
+# old spelling
+sub dump_oneline { dump_one_line(@_) }
 
 =head1 SEE ALSO
 
