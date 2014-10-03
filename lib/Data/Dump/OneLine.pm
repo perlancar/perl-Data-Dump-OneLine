@@ -448,6 +448,7 @@ sub quote {
 }
 
 1;
+#ABSTRACT: Dump data structures as single-line strings
 
 =for Pod::Coverage ^(.+)$
 
