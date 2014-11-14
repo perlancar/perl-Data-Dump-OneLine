@@ -6,7 +6,10 @@ package Data::Dump::OneLine;
 use Data::Dmp;
 
 our @ISA = qw(Data::Dmp);
-our @EXPORT = @Data::Dmp::EXPORT;
+our @EXPORT = (@Data::Dmp::EXPORT, 'dump1', 'dump_one_line');
+
+*dump1 = \&Data::Dmp::dmp;
+*dump_one_line = \&Data::Dmp::dmp;
 
 1;
 #ABSTRACT: Dump data structures as single-line strings
