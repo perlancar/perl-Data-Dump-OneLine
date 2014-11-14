@@ -3,6 +3,10 @@ package Data::Dump::OneLine;
 # DATE
 # VERSION
 
+use 5.010001;
+use strict;
+use warnings;
+
 use Data::Dmp;
 
 our @ISA = qw(Data::Dmp);
