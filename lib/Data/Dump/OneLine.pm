@@ -27,6 +27,8 @@ our @EXPORT = (@Data::Dmp::EXPORT, 'dump1', 'dump_one_line');
 
 =head1 DESCRIPTION
 
+It now uses L<Data::Dmp>. You should use Data::Dmp directly.
+
 
 =head1 SEE ALSO
 
