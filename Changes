@@ -1,5 +1,3 @@
-Revision history for Data-Dump-OneLine
-
 0.07    2015-03-25 (PERLANCAR)
 
 	- Update test and prereq version to newer Data::Dmp (0.09+) which
