@@ -1,3 +1,8 @@
+0.080   2021-06-27  Released-By: PERLANCAR; Urgency: medium
+
+	- Adjust to Data::Dmp 0.241 (RT#136979).
+
+
 0.07    2015-03-25  Released-By: PERLANCAR
 
 	- Update test and prereq version to newer Data::Dmp (0.09+) which
